@@ -12,6 +12,8 @@
 		278411751DBFADC200FF7DB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 278411731DBFADC200FF7DB4 /* Main.storyboard */; };
 		278411771DBFADC200FF7DB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278411761DBFADC200FF7DB4 /* Assets.xcassets */; };
 		2784117A1DBFADC200FF7DB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 278411781DBFADC200FF7DB4 /* LaunchScreen.storyboard */; };
+		278411821DBFAE4100FF7DB4 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278411811DBFAE4100FF7DB4 /* Card.swift */; };
+		278411851DBFAF2400FF7DB4 /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278411841DBFAF2400FF7DB4 /* PlayingCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		278411761DBFADC200FF7DB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		278411791DBFADC200FF7DB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2784117B1DBFADC200FF7DB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		278411811DBFAE4100FF7DB4 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Model/Card.swift; sourceTree = "<group>"; };
+		278411841DBFAF2400FF7DB4 /* PlayingCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayingCard.swift; path = Model/PlayingCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		2784116E1DBFADC200FF7DB4 /* CardGame */ = {
 			isa = PBXGroup;
 			children = (
+				278411831DBFAEFC00FF7DB4 /* New Group */,
 				2784116F1DBFADC200FF7DB4 /* AppDelegate.swift */,
 				278411711DBFADC200FF7DB4 /* ViewController.swift */,
 				278411731DBFADC200FF7DB4 /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				2784117B1DBFADC200FF7DB4 /* Info.plist */,
 			);
 			path = CardGame;
+			sourceTree = "<group>";
+		};
+		278411831DBFAEFC00FF7DB4 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				278411811DBFAE4100FF7DB4 /* Card.swift */,
+				278411841DBFAF2400FF7DB4 /* PlayingCard.swift */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				278411721DBFADC200FF7DB4 /* ViewController.swift in Sources */,
+				278411821DBFAE4100FF7DB4 /* Card.swift in Sources */,
+				278411851DBFAF2400FF7DB4 /* PlayingCard.swift in Sources */,
 				278411701DBFADC200FF7DB4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
