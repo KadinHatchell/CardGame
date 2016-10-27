@@ -74,14 +74,14 @@ class PlayingCard : Card
     
     override func toString() -> String
     {
-        let facing : Bool
+        let facing : String
         if self.isUp()
         {
-            facing = true
+            facing = " is face up"
         }
         else
         {
-            facing = false
+            facing = " is face down"
         }
         
         let description = "Ths PlayingCard has a face value of \(rank) a color of \(color), the back ingame is \(self.getBackImage()) and is of suit \(suit) suit \(facing)"
