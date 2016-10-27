@@ -72,6 +72,23 @@ class PlayingCard : Card
         
     }
     
+    override func toString() -> String
+    {
+        let facing : Bool
+        if self.isUp()
+        {
+            facing = true
+        }
+        else
+        {
+            facing = false
+        }
+        
+        let description = "Ths PlayingCard has a face value of \(rank) a color of \(color), the back ingame is \(self.getBackImage()) and is of suit \(suit) suit \(facing)"
+        
+        return description
+    }
+    
     func getRank()-> Int
     {
         return self.rank
