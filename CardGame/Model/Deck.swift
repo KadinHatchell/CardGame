@@ -6,7 +6,7 @@
 //  Copyright © 2016 Hatchell, Kadin. All rights reserved.
 //
 
-import UIKit;
+import Foundation;
 
 class Deck : PlayingCard
 {
