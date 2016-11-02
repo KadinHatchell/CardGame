@@ -10,58 +10,11 @@ import UIKit
 
 class PlayingCard : Card
 {
-    private var rank : Int
-    {
-        get
-        {
-            return self.rank
-            
-        }
-        set(rank)
-        {
-            self.rank = rank
-        }
-    
-    }
-    
-    private var suit : String
-    {
-        get
-        {
-            return self.suit
-        }
-        set(suit)
-        {
-            self.suit = suit
-        }
+    internal var rank : Int
+    internal var suit : String
+    internal var color : UIColor
+    internal var frontImage : UIImage
         
-    }
-    
-    private var color : UIColor
-    {
-        get
-        {
-            return self.color
-        }
-        set(color)
-        {
-            self.color = color
-        }
-    }
-    
-    private var frontImage : UIImage
-        {
-        get
-        {
-            return self.frontImage
-        }
-        set(frontImage)
-        {
-            self.frontImage = frontImage
-        }
-    
-    }
-    
     override init()
     {
         super.init()
@@ -109,6 +62,25 @@ class PlayingCard : Card
     func setRank(rank : Int)
     {
         self.rank = rank
+    }
+    
+    //The modifier 'class in fornt of the func mean that this method is visible
+    // without creating an instance of the class in question.
+    //This is a class method, not an instance method.
+    class func validRanks() -> [String]
+    {
+        return ["??","A","2","3","4","5","6","7","8","9","10","J","Q","K"]
+    }
+    
+    class func validSuits() -> [String]
+    {
+        return ["♥️","♠️","♦️","♣️"]
+    }
+    
+    class func maxRank() -> Int
+    {
+     
+        return validRanks().count - 1
     }
     
 }
