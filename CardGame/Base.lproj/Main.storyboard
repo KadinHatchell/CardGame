@@ -16,11 +16,47 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XO7-ra-LBO">
+                                <rect key="frame" x="200" y="94" width="42" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="cardLabel"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8k-iD-buA">
+                                <rect key="frame" x="200" y="160" width="200" height="280"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
+                                <state key="normal" title="Text" backgroundImage="pcard"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="100" y="150" width="200" height="300"/>
+                                </variation>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aD1-9Q-y2J"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XO7-ra-LBO" firstAttribute="width" secondItem="q8k-iD-buA" secondAttribute="width" id="1mQ-C6-TOe"/>
+                            <constraint firstItem="q8k-iD-buA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rvp-TS-eck"/>
+                            <constraint firstItem="XO7-ra-LBO" firstAttribute="leading" secondItem="q8k-iD-buA" secondAttribute="leading" id="Zt8-mW-MC8"/>
+                            <constraint firstItem="q8k-iD-buA" firstAttribute="top" secondItem="XO7-ra-LBO" secondAttribute="bottom" constant="35" id="lA7-bs-vKE"/>
+                            <constraint firstItem="q8k-iD-buA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="se7-t1-kAx"/>
+                        </constraints>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="cardButton" destination="q8k-iD-buA" id="feH-j4-562"/>
+                        <outlet property="cardLabel" destination="XO7-ra-LBO" id="H45-1h-P67"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="304.5" y="346"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pcard" width="200" height="280"/>
+    </resources>
 </document>

@@ -17,7 +17,6 @@ class PlayingCard : Card
         
     override init()
     {
-        super.init()
         frontImage = UIImage(named: "pcard")!
         color = UIColor.redColor()
         rank = 0
@@ -27,7 +26,7 @@ class PlayingCard : Card
     
     init(withRank: Int, ofSuit: String)
     {
-        super.init()
+       
         frontImage = UIImage(named: "pcard")!
         color = UIColor.redColor()
         
@@ -62,6 +61,12 @@ class PlayingCard : Card
     func setRank(rank : Int)
     {
         self.rank = rank
+    }
+    
+    func getCardData() -> String
+    {
+        let data = "\(PlayingCard.validRanks()[rank]) \(suit)"
+        return data
     }
     
     //The modifier 'class in fornt of the func mean that this method is visible
